@@ -19,6 +19,29 @@ body {
   right: 0;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  content: "Depth-First-Search";
+  left: 0;
+  padding: 1.5rem 1rem 1rem 0.7rem;
+  border: 0;
+  width: 20vw;
+  background-color: #559dc3;
+  text-align: left;
+  font-size: 1.125rem;
+}
+button:hover {
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 600px) {
   .title {
     font-size: 2rem;
