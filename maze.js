@@ -8,7 +8,7 @@ let ctx = canvas.getContext("2d");
 let current;
 
 class Maze {
-  constructor(size, rows = 20, cols = 20) {
+  constructor(size, rows = 30, cols = 30) {
     this.size = size;
     this.rows = rows;
     this.cols = cols;
@@ -41,7 +41,7 @@ class Maze {
     }
 
     let size = this.size / this.rows;
-    ctx.fillStyle = "green";
+    ctx.fillStyle = "#b3f2dd";
     ctx.fillRect((this.rows - 1) * size, (this.cols - 1) * size, size, size);
 
     let next = current.getNextNeighbour();
@@ -114,7 +114,7 @@ class Cell {
   }
 
   highlight() {
-    ctx.fillStyle = "#ff0000";
+    ctx.fillStyle = "#db5461";
     ctx.fillRect(this.x, this.y, this.size, this.size);
   }
 
